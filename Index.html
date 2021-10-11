@@ -1,0 +1,93 @@
+<!--///////////////////////////////////////////////////////////
+    Subj: Coding Dojo > Web Fundamentals > HTML
+    Registration Form
+    By: Virilio D. Cabading Jr.
+    Created: October 11, 2021
+    ///////////////////////////////////////////////////////////
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.: Registration Form</title>
+</head>
+<body>
+    <div>
+        <h1>Registration Form</h1>
+    </div>
+
+    <div id="firstName">
+        First Name: *  
+        <input type="text" name="first_name">
+    </div>
+
+    <div id="lastName">
+        Last  Name: *  
+        <input type="text" name="last_name">
+    </div>
+
+    <div id="email">
+        Email Address: *
+        <input type="email" name="email">
+    </div>
+
+    <div id="password">
+        Password: *
+        <input type="password" name="password">
+    </div>
+
+    <div id="confirmPassword">
+        Confirm Password: *
+        <input type="password" name="confirm_password">
+    </div>
+
+    <div id="birthday">
+        Birthday: 
+        <input type="date" name="birthday">
+    </div>
+
+    <div id="genderIdentity">
+        <p>Gender Identity</p>
+        <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        <input type="radio" name="nonBinary" value="nonBinary" id="nonBinary">
+            <label for="nonBinary">Non-binary</label>
+        <input type="radio" name="preferNotToAnswer" value="preferNotToAnswer" id="preferNotToAnswer">
+            <label for="preferNotToAnswer">I prefer not to answer</label>
+    </div>
+
+    <div id='shortDescription'>
+        <p>
+            A short description about myself:
+        </p>
+        <textarea name="short_description" id="short_description" cols="50" rows="5"></textarea>
+    </div>
+
+    <div id="favLanguage">
+        Favorite Language:  
+        <select name="fav_language" id="fav_language">
+            <option value="javascript">Javascript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+    </div>
+
+    <div id='receiveEmail'>
+        <input type="checkbox" name="receive_email" id="receive_email">
+            <label for="receive_email">Yes, I would like to receive periodic email updates</label>
+    </div>
+
+    <div>
+        <input type="submit" value="Create Accdount" name="create_account" id="create_account">
+    </div>
+
+    <div id="key">
+        * Indicates a required field
+    </div>
+</body>
+</html>
